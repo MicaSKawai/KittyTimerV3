@@ -623,6 +623,20 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CheckFailure):
         return
 
+# ---------------- EVENTOS DE CONEXIÓN ----------------
+
+@bot.event
+async def on_disconnect():
+    print(f"[DISCORD] Bot desconectado — {datetime.utcnow()}")
+
+@bot.event
+async def on_resumed():
+    print(f"[DISCORD] Sesión resumida — {datetime.utcnow()}")
+
+@bot.event
+async def on_connect():
+    print(f"[DISCORD] Conectado — {datetime.utcnow()}")
+
 # ---------------- READY ----------------
 
 @bot.event
