@@ -33,9 +33,9 @@ TURSO_TOKEN = os.environ["TURSO_TOKEN"]
 
 # ---------------- CANALES ----------------
 
-CANAL_REGISTRO  = 1482912693680869426
-CANAL_AVISOS    = 1482912285230895205
-CANAL_DASHBOARD = 1482912464483127336
+CANAL_REGISTRO  = 1488053520681664562
+CANAL_AVISOS    = 1488053466545913947
+CANAL_DASHBOARD = 1488053418798088222
 
 def get_canal(canal_id):
     return bot.get_channel(canal_id)
@@ -623,18 +623,6 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CheckFailure):
         return
 
-@bot.event
-async def on_disconnect():
-    print(f"⚠️ Bot desconectado de Discord.")
-
-@bot.event
-async def on_resumed():
-    print(f"✅ Bot reconectado a Discord.")
-
-@tasks.loop(seconds=30)
-async def heartbeat():
-    print(f"💓 Bot vivo — {datetime.utcnow().strftime('%H:%M:%S')}")
-
 # ---------------- READY ----------------
 
 @bot.event
@@ -645,7 +633,6 @@ async def on_ready():
     dashboard.start()
     finalizar.start()
     actualizar_barras.start()
-    heartbeat.start()
 
     canal = get_canal(CANAL_REGISTRO)
     if canal:
