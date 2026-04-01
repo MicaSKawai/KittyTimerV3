@@ -232,7 +232,7 @@ async def capataz(ctx):
 
 @bot.command()
 async def cargas(ctx):
-    await iniciar_timer(ctx, "Cargas", 72)
+    await iniciar_timer(ctx, "Cargas", 49)
 
 @bot.command()
 async def plantas(ctx):
