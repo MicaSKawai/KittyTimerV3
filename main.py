@@ -396,7 +396,7 @@ class Panel(discord.ui.View):
     @discord.ui.button(label="🔫 Cargas",     style=discord.ButtonStyle.primary,   row=0)
     async def cargas(self, interaction: discord.Interaction, button: discord.ui.Button):
         await interaction.response.defer(ephemeral=True)
-        await iniciar_timer_raw(interaction.user, "Cargas", 72)
+        await iniciar_timer_raw(interaction.user, "Cargas", 49)
 
     @discord.ui.button(label="🌿 Plantas",    style=discord.ButtonStyle.success,   row=1)
     async def plantas(self, interaction: discord.Interaction, button: discord.ui.Button):
