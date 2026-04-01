@@ -430,7 +430,7 @@ async def panel(ctx):
         description=(
             "Usá los botones para iniciar tu timer.\n\n"
             "**🏭 Farm Principal**\n"
-            "📦 Cajas `3h`  ·  💰 Robo `2h`  ·  👷 Capataz `6h`  ·  🔫 Cargas `72h`\n\n"
+            "📦 Cajas `3h`  ·  💰 Robo `2h`  ·  👷 Capataz `6h`  ·  🔫 Cargas `49h`\n\n"
             "**🌱 Plantas & Planos**\n"
             "🌿 Plantas `1.5h`  ·  🟣 Planos x6 `6h`  ·  ⬜ Planos x8 `8h`  ·  🟡 Planos x10 `10h`\n\n"
             "**🗝️ Especial**\n"
