@@ -232,7 +232,7 @@ async def capataz(ctx):
 
 @bot.command()
 async def cargas(ctx):
-    await iniciar_timer(ctx, "Cargas", 49)
+    await iniciar_timer(ctx, "Cargas", 72)
 
 @bot.command()
 async def plantas(ctx):
@@ -396,7 +396,7 @@ class Panel(discord.ui.View):
     @discord.ui.button(label="🔫 Cargas",     style=discord.ButtonStyle.primary,   row=0)
     async def cargas(self, interaction: discord.Interaction, button: discord.ui.Button):
         await interaction.response.defer(ephemeral=True)
-        await iniciar_timer_raw(interaction.user, "Cargas", 49)
+        await iniciar_timer_raw(interaction.user, "Cargas", 72)
 
     @discord.ui.button(label="🌿 Plantas",    style=discord.ButtonStyle.success,   row=1)
     async def plantas(self, interaction: discord.Interaction, button: discord.ui.Button):
@@ -430,7 +430,7 @@ async def panel(ctx):
         description=(
             "Usá los botones para iniciar tu timer.\n\n"
             "**🏭 Farm Principal**\n"
-            "📦 Cajas `3h`  ·  💰 Robo `2h`  ·  👷 Capataz `6h`  ·  🔫 Cargas `49h`\n\n"
+            "📦 Cajas `3h`  ·  💰 Robo `2h`  ·  👷 Capataz `6h`  ·  🔫 Cargas `72h`\n\n"
             "**🌱 Plantas & Planos**\n"
             "🌿 Plantas `1.5h`  ·  🟣 Planos x6 `6h`  ·  ⬜ Planos x8 `8h`  ·  🟡 Planos x10 `10h`\n\n"
             "**🗝️ Especial**\n"
